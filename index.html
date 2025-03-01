@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="title"
+      content="Online JS & CSS Minifier - Code Optimizer & File Compressor"
+    />
+    <meta
+      name="description"
+      content="Free online tool to minify and compress JavaScript & CSS files. Reduce file sizes, improve website performance with batch processing and instant downloads. Supports multiple files with quality preservation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://minifier.darpanadhikari.com.np/" />
+    <meta
+      property="og:title"
+      content="Online JS & CSS Minifier - Code Optimizer & File Compressor"
+    />
+    <meta
+      property="og:description"
+      content="Free online JavaScript and CSS minification tool with batch processing. Compress web files instantly, reduce load times, and improve SEO performance."
+    />
+    <meta
+      property="og:image"
+      content="https://minifier.darpanadhikari.com.np/minifier.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://minifier.darpanadhikari.com.np/minifier"
+    />
+    <meta
+      property="twitter:title"
+      content="Online JS & CSS Minifier - Code Optimizer & File Compressor"
+    />
+    <meta
+      property="twitter:description"
+      content="Web developer's tool for minifying JavaScript and CSS files. Batch process multiple files, get instant compression results with size reduction statistics."
+    />
+    <meta
+      property="twitter:image"
+      content="https://minifier.darpanadhikari.com.np/images/minifier-tool-twitter-preview.png"
+    />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://minifier.darpanadhikari.com.np/minifier"
+    />
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="online code minifier, JS CSS compressor, web optimization tool, free code minifier, batch file compression, JavaScript minification, CSS optimizer, web performance tool, frontend optimization"
+    />
+
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en" />
+    <meta name="language" content="English" />
+
+    <title>DRP Minifier | Darpan Adhikari</title>
+    <link
+      rel="shortcut icon"
+      href="https://darpanadhikari.com.np/addition/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Online Code Minifier",
+      "applicationCategory": "DeveloperTools",
+      "operatingSystem": "Web",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Professional-grade JavaScript and CSS minification tool with batch processing capabilities",
+      "featureList": "File compression, Code optimization, Size reduction stats, Multiple format support, Instant downloads"
+    }
+  </script>
+  <body>
+    <div class="container">
+      <div class="file-adder">
+        <label class="custom-file-upload">
+          <input type="file" id="fileInput" multiple accept=".js,.css" />
+          Select Files
+        </label>
+        <button onclick="minifyFiles()">Minify All</button>
+      </div>
+
+      <div class="tabs-container" id="tabsContainer"></div>
+
+      <div class="tab-content" id="tabContent">
+        <div class="file-stats" id="fileStats"></div>
+        <textarea
+          id="output"
+          readonly
+          placeholder="Select a file to view minified code"
+        ></textarea>
+        <div class="button-group">
+          <button onclick="downloadCurrentFile()">Download</button>
+          <button onclick="copyToClipboard()">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="drp_element_4">
+      <div class="drp_element_5">
+        ✅ :
+        <span id="success-count"> 0 </span>
+      </div>
+      <div class="drp_element_6">
+        ❌:
+        <span id="failure-count"> 0 </span>
+      </div>
+    </div>
+    <footer>
+      <span
+        ><i>&copy;</i><span id="date"></span
+        ><a href="https://darpanadhikari.com.np" target="_blank">
+          DarpanAdhikari</a
+        >
+        || All right reserved</span
+      >
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
